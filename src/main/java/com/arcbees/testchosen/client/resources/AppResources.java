@@ -8,6 +8,9 @@ public interface AppResources extends ClientBundle {
     }
 
     interface Style extends CssResource {
+        String content();
+
+        String example();
     }
 
     @Source("css/normalize.gss")
