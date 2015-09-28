@@ -1,0 +1,22 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:chzn="urn:import:com.arcbees.chosen.client.gwt">
+
+    <g:HTMLPanel>
+
+        <p>
+            <chzn:ChosenListBox placeholderText="Choose your character...">
+                <g:item value=""></g:item>
+                <g:item value="Darth Vader">Darth Vader</g:item>
+                <g:item value="Luke Skywalker">Luke Skywalker</g:item>
+                <g:item value="Princess Leia">Princess Leia</g:item>
+                <g:item value="Boba Fett">Boba Fett</g:item>
+            </chzn:ChosenListBox>
+        </p>
+
+        <p>
+            <chzn:MultipleChosenValueListBox ui:field="multipleValues" width="500px"/>
+        </p>
+
+    </g:HTMLPanel>
+</ui:UiBinder>
