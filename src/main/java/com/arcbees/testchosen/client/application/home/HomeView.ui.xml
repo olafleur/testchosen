@@ -2,9 +2,16 @@
              xmlns:g='urn:import:com.google.gwt.user.client.ui'
              xmlns:chzn="urn:import:com.arcbees.chosen.client.gwt">
 
-    <g:HTMLPanel>
+    <ui:with field="resources" type="com.arcbees.testchosen.client.resources.AppResources"/>
 
-        <p>
+    <g:HTMLPanel styleName="{resources.style.content}">
+
+        <h1>Basic Chosen example</h1>
+
+        <div class="{resources.style.example}">
+
+            <h2>Single select</h2>
+
             <chzn:ChosenListBox placeholderText="Choose your character..." width="300px">
                 <g:item value=""></g:item>
                 <g:item value="Darth Vader">Darth Vader</g:item>
@@ -12,11 +19,16 @@
                 <g:item value="Princess Leia">Princess Leia</g:item>
                 <g:item value="Boba Fett">Boba Fett</g:item>
             </chzn:ChosenListBox>
-        </p>
 
-        <p>
+        </div>
+
+        <div class="{resources.style.example}">
+
+            <h2>Multiple select</h2>
+
             <chzn:MultipleChosenValueListBox ui:field="multipleValues" width="300px"/>
-        </p>
+
+        </div>
 
     </g:HTMLPanel>
 </ui:UiBinder>
