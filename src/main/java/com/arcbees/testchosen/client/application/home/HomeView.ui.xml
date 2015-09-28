@@ -5,7 +5,7 @@
     <g:HTMLPanel>
 
         <p>
-            <chzn:ChosenListBox placeholderText="Choose your character...">
+            <chzn:ChosenListBox placeholderText="Choose your character..." width="300px">
                 <g:item value=""></g:item>
                 <g:item value="Darth Vader">Darth Vader</g:item>
                 <g:item value="Luke Skywalker">Luke Skywalker</g:item>
@@ -15,7 +15,7 @@
         </p>
 
         <p>
-            <chzn:MultipleChosenValueListBox ui:field="multipleValues" width="500px"/>
+            <chzn:MultipleChosenValueListBox ui:field="multipleValues" width="300px"/>
         </p>
 
     </g:HTMLPanel>
